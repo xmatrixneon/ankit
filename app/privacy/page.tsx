@@ -51,8 +51,8 @@ export default function PrivacyPage() {
         <h2 className="mb-3 text-xl font-semibold text-slate-900">Contact</h2>
         <p className="text-slate-600">
           If you have questions about this privacy policy, please contact us at{' '}
-          <a href="mailto:privacy@couponhub.com" className="text-blue-600 hover:underline">
-            privacy@couponhub.com
+          <a href="mailto:privacy@ankitofferwala.online" className="text-blue-600 hover:underline">
+            privacy@ankitofferwala.online
           </a>
         </p>
       </div>

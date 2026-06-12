@@ -19,7 +19,7 @@ export function Navigation() {
       <div className="mx-auto max-w-6xl px-4">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="text-xl font-bold text-slate-900">
-            CouponHub
+            Ankitofferwala
           </Link>
           <div className="flex gap-6">
             {navItems.map((item) => (

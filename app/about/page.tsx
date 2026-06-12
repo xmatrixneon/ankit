@@ -6,7 +6,7 @@ export default function AboutPage() {
       <div className="prose prose-slate max-w-none">
         <p className="mb-4 text-slate-600">
           CouponHub is your trusted source for verified deals and coupons from top retailers.
-          We scour the web to find the best discounts so you don't have to.
+          We scour the web to find the best discounts so you don&apos;t have to.
         </p>
 
         <h2 className="mb-3 text-xl font-semibold text-slate-900">Our Mission</h2>

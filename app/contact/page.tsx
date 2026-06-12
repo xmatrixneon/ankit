@@ -13,20 +13,32 @@ export default function ContactPage() {
           <div>
             <h2 className="mb-1 font-semibold text-slate-900">Email</h2>
             <a
-              href="mailto:support@couponhub.com"
+              href="mailto:support@ankitofferwala.online"
               className="text-blue-600 hover:underline"
             >
-              support@couponhub.com
+              support@ankitofferwala.online
             </a>
           </div>
 
           <div>
             <h2 className="mb-1 font-semibold text-slate-900">Business Inquiries</h2>
             <a
-              href="mailto:business@couponhub.com"
+              href="mailto:business@ankitofferwala.online"
               className="text-blue-600 hover:underline"
             >
-              business@couponhub.com
+              business@ankitofferwala.online
+            </a>
+          </div>
+
+           <div>
+            <h2 className="mb-1 font-semibold text-slate-900">Whatsapp</h2>
+            <a
+              href="https://wa.me/919584359201"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              +91 95843 59201
             </a>
           </div>
 
@@ -34,8 +46,8 @@ export default function ContactPage() {
             <h2 className="mb-1 font-semibold text-slate-900">Submit a Deal</h2>
             <p className="text-sm text-slate-600">
               Know about a great deal we're missing? Send it to{' '}
-              <a href="mailto:deals@couponhub.com" className="text-blue-600 hover:underline">
-                deals@couponhub.com
+              <a href="mailto:deals@ankitofferwala.online" className="text-blue-600 hover:underline">
+                deals@ankitofferwala.online
               </a>
             </p>
           </div>
