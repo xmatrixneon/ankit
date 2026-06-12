@@ -48,3 +48,28 @@ export function getRelatedCoupons(slug: string, category: string, limit = 4): Co
     .filter(coupon => coupon.category === category && coupon.slug !== slug)
     .slice(0, limit);
 }
+
+/**
+ * Validates and sanitizes affiliate URLs to prevent XSS and open redirect attacks.
+ * Only allows http:// and https:// protocols.
+ */
+export function getSafeAffiliateUrl(url: string | undefined): string | undefined {
+  if (!url) return undefined;
+
+  // Trim whitespace
+  const trimmedUrl = url.trim();
+
+  // Validate protocol - only allow http:// and https://
+  if (!trimmedUrl.startsWith('https://') && !trimmedUrl.startsWith('http://')) {
+    console.warn('Invalid affiliate URL protocol:', trimmedUrl);
+    return undefined;
+  }
+
+  // Additional check for javascript: and data: protocols (defense in depth)
+  if (trimmedUrl.startsWith('javascript:') || trimmedUrl.startsWith('data:')) {
+    console.warn('Blocked dangerous URL protocol:', trimmedUrl);
+    return undefined;
+  }
+
+  return trimmedUrl;
+}

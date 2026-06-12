@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { getCouponBySlug, getRelatedCoupons } from '@/lib/data';
+import { getCouponBySlug, getRelatedCoupons, getSafeAffiliateUrl } from '@/lib/data';
 import { CouponCode } from '@/components/CouponCode';
 import { DealCard } from '@/components/DealCard';
 import { Badge } from '@/components/ui/badge';
@@ -42,6 +42,7 @@ export default function DealPage({ params }: PageProps) {
 
   const isExpired = new Date(deal.expiration) < new Date();
   const relatedDeals = getRelatedCoupons(deal.slug, deal.category);
+  const safeAffiliateUrl = getSafeAffiliateUrl(deal.affiliateUrl);
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-12">
@@ -114,11 +115,11 @@ export default function DealPage({ params }: PageProps) {
       </div>
 
       {/* CTA Button */}
-      {!isExpired && (
+      {!isExpired && safeAffiliateUrl && (
         <div className="mb-12">
           <Button asChild size="lg" className="w-full">
             <a
-              href={deal.affiliateUrl}
+              href={safeAffiliateUrl}
               target="_blank"
               rel="noopener noreferrer"
             >
