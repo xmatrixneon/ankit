@@ -1,0 +1,44 @@
+[
+  {
+    "id": "tech",
+    "name": "Technology",
+    "slug": "tech",
+    "description": "Electronics, software, and gadgets",
+    "icon": "Laptop"
+  },
+  {
+    "id": "fashion",
+    "name": "Fashion",
+    "slug": "fashion",
+    "description": "Clothing, shoes, and accessories",
+    "icon": "Shirt"
+  },
+  {
+    "id": "home",
+    "name": "Home & Garden",
+    "slug": "home",
+    "description": "Furniture, decor, and household essentials",
+    "icon": "Home"
+  },
+  {
+    "id": "food",
+    "name": "Food & Dining",
+    "slug": "food",
+    "description": "Restaurants, groceries, and meal delivery",
+    "icon": "Utensils"
+  },
+  {
+    "id": "travel",
+    "name": "Travel",
+    "slug": "travel",
+    "description": "Flights, hotels, and vacation packages",
+    "icon": "Plane"
+  },
+  {
+    "id": "sports",
+    "name": "Sports & Fitness",
+    "slug": "sports",
+    "description": "Athletic gear, gym memberships, and outdoor activities",
+    "icon": "Dumbbell"
+  }
+]
